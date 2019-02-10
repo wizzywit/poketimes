@@ -14,9 +14,9 @@ import { Link, NavLink, withRouter } from 'react-router-dom';
 const Navbar = (props) => {
     // now to be able to redirect on this page we have to add the withRouter because NavBar component was not routed 
     //in the root component App.js
-     setTimeout(() => {
-         props.history.push('/about')
-     }, 2000)
+    //  setTimeout(() => {
+    //      props.history.push('/about')
+    //  }, 2000)
      //this redirects the content to a different page after 2sec 
     
     return (
@@ -34,4 +34,6 @@ const Navbar = (props) => {
 }
 
 //we pass the component in the withRouter method
+//withRouter() is an example of higher order component
+//it added props to the NavBar component
 export default withRouter(Navbar);
